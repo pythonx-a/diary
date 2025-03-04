@@ -42,6 +42,13 @@
 - Ubuntu [1]
 - POSIX [1]
 
+## PIP et PEP
+
+PIP : Gestionnaire de paquet de Pyton
+PEP : Python Enhancement Proposal
+
+PEP668
+
 ## Exercice pratique 
 
 1. Python > 3.10  (python --version)
