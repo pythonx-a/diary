@@ -14,7 +14,7 @@ type(animal) # Animal
 type(Animal) # type
 ```
 
-On constate que le type d'une classe est `type`, donc la classe `Animal` est déjà une instance. 
+On constate que le type d'une classe est `type`, donc la classe `Animal` est déjà une instance.
 
 Puisqu'il s'agit déjà d'une instance, cela me permet de rajouter un attribut à ma classe au *runtime*:
 
@@ -24,7 +24,7 @@ Animal.toto = lambda self,x: 42
 
 ## Attributs
 
-Par défaut, un attribut est en lecture/écriture. Donc je peux écraser le nom de mon animal. 
+Par défaut, un attribut est en lecture/écriture. Donc je peux écraser le nom de mon animal.
 
 ```py
 class Animal:
@@ -57,7 +57,7 @@ Oui mais on peut quand même écrire `animal._name = 'oops'` ? Absolument mais v
 
 ### Getter
 
-En programmation objet, on crée des *getter*, ce sont des méthodes qui retourne la valeur d'un attribut privé ou caché: 
+En programmation objet, on crée des *getter*, ce sont des méthodes qui retourne la valeur d'un attribut privé ou caché:
 
 ```py
 class Animal:
@@ -70,7 +70,7 @@ class Animal:
         return self._name
 ```
 
-En Python on peut utiliser un *décorateur* qui se substitue à un attribut. 
+En Python on peut utiliser un *décorateur* qui se substitue à un attribut.
 
 ```py
 >>> animal = Animal("Foxy")
@@ -80,7 +80,7 @@ Foxy
 AttributeError: Cannot change this attribute (read only)
 ```
 
-Cela permet par exemple d'associer des actions à un attribut: 
+Cela permet par exemple d'associer des actions à un attribut:
 
 ```py
 class Animal:
@@ -116,7 +116,7 @@ AttributeError: Cannot change name anymore
 
 La question se pose: est-ce préférable d'avoir `foo.name` ou `foo.name()` ?
 
-Dans d'autres langage comme Java, il n'y a pas le choix, en Python une symbolique et donnée. 
+Dans d'autres langage comme Java, il n'y a pas le choix, en Python une symbolique et donnée.
 
 - Avec un attribut, le programmeur s'attend à ce qu'il n'y ait pas de calcul pour obtenir l'attribut
 - Avec une méthode, le programmeur s'attend à ce qu'il puisse y avoir du calcul.
@@ -136,7 +136,7 @@ class Vector:
 >>> v.length
 ```
 
-Le calcul de `sqrt` peut prendre du temps, surtout sur une grande quantité de données. Un cas typique est le calcul de la longueur: 
+Le calcul de `sqrt` peut prendre du temps, surtout sur une grande quantité de données. Un cas typique est le calcul de la longueur:
 
 ```py
 class Vector:
@@ -207,9 +207,9 @@ class Foo:
 >>> f[1:4:5] # Slice
 ```
 
-## Pint 
+## Pint
 
-Pint est pratique pour la conversion d'unités: 
+Pint est pratique pour la conversion d'unités:
 
 ```py
 import pint
@@ -234,7 +234,7 @@ w.to(ureg.km / ureg.ampere)
 
 ## Annotation de type
 
-L'annotaton de type est utile pour le lexer et le linter mais pas à l'exécution: 
+L'annotaton de type est utile pour le lexer et le linter mais pas à l'exécution:
 
 ```py
 def length(v: Vector) -> float:

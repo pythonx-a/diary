@@ -1,13 +1,13 @@
 # Semaine 01/16
 
-- Que connaissez-vous en Python ? 
-- Qu'avez vous déjà expérimenté ? 
-- Que voudriez-vous approfondir ? 
-- Quel système d'exploitation utilisez-vous ? 
+- Que connaissez-vous en Python ?
+- Qu'avez vous déjà expérimenté ?
+- Que voudriez-vous approfondir ?
+- Quel système d'exploitation utilisez-vous ?
 
 ## Je connais
 
-- ProjMulti, communiquer avec un Arduino Traitement d'image 
+- ProjMulti, communiquer avec un Arduino Traitement d'image
 - Les bases de Python, pour automatiser des tâches
 - Comprendre du code existant (aide avec un LLM)
 - Pas mal utilisé en data (TF, Pandas... Datascience en général)
@@ -19,9 +19,9 @@
 - OpenCV
 - API
 
-## J'aimerais approfondir 
+## J'aimerais approfondir
 
-- Ce que ça peut apporter en général dans l'informatique 
+- Ce que ça peut apporter en général dans l'informatique
 - POO
 - Datamodel
 - Structure de projet et modules
@@ -31,7 +31,7 @@
 - Savoir ce que je fais
 - Programmation structurée
 - Interface entre machine et ordinateur
-- Paramiko, Netmiko 
+- Paramiko, Netmiko
 - Cython (appel C/C++ depuis Python)
 - Ctype
 
@@ -49,10 +49,10 @@ PEP : Python Enhancement Proposal
 
 PEP668
 
-## Exercice pratique 
+## Exercice pratique
 
 1. Python > 3.10  (python --version)
-2. IPython (repl) 
+2. IPython (repl)
 3. Essayer d'executer quelques commandes python
    1. Faire une opération
    2. Créer une fonction
