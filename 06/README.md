@@ -1,13 +1,20 @@
 # Semaine 06/16
 
 - [x] Args et kwargs
-- [ ] Héritage
-- [ ] Construction de classes
+- [x] Héritage
+- [x] Construction de classes
+- [x] Une classe est une instance
+- [x] Autoreload
+  
 - [ ] Decorateurs et mémoization
-- [ ] Autoreload
-- [ ] Une classe est une instance
 - [ ] ABC
 
+## Autoreload
+
+```py
+%load_ext autoreload
+%autoreload 2
+```
 
 ## Args et kwargs
 
@@ -59,9 +66,39 @@ class Singleton:
 
 ## Héritage
 
+```py
+class ClassName(ParentClass):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+```
+
+Dans le cas (ne le faite pas) d'un héritage multiple: 
+
+```py
+class ClassName(ParentClass1, ParentClass2):
+    def __init__(self, *args, **kwargs):
+        super(ParentClass1, self).__init__(*args, **kwargs)
+        super(ParentClass2, self).__init__(*args, **kwargs)
+```
+
+Exemple avec un animal: 
+
+```py
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        raise NotImplementedError("Subclass must implement abstract method")
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+```
+
 ### Exercice de surcharge
 
-Créer une classe `MyNumpyArray` qui hérite d'une liste.
+Créer une classe `MyNumpyArray` qui hérite d'une liste `list`.
 Surcharger l'opérateur `+` et `*` pour que la liste se comporte comme dans Numpy.
 
 ```py
