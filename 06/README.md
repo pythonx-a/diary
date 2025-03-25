@@ -1,6 +1,6 @@
 # Semaine 06/16
 
-- [ ] Args et kwargs
+- [x] Args et kwargs
 - [ ] Héritage
 - [ ] Construction de classes
 - [ ] Decorateurs et mémoization
@@ -9,10 +9,27 @@
 - [ ] ABC
 
 
-
 ## Args et kwargs
 
 `*args` et `**kwargs` sont utilisés pour passer un nombre variable d'arguments à une fonction.
+
+L'étoile `*` devant `*args` permet de décomposer une liste en arguments.
+La double étoile `**` devant `**kwargs` permet de décomposer un dictionnaire en arguments.
+
+```py
+u, v = [1,2,3], [4,5,6]
+z = list(zip(u, v)) # [(1, 4), (2, 5), (3, 6)]
+a, b = zip(*z)      # ([1, 2, 3], [4, 5, 6])
+```
+
+```py
+def foo(a, b=42):
+    print(a, b)
+
+def wrapper(*args, **kwargs):
+    print(args, kwargs)
+    foo(*args, **kwargs)
+```
 
 ## Construction de classes
 

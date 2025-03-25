@@ -5,6 +5,15 @@
 - [x] 3.13
 - [x] Scalaires, opérateurs
 
+
+## Semver
+
+Si vous vous rendez sur [semver](www.semver.org), vous pouvez comprendre comment gérer correctement les versions des logiciels. Une version se compose toujours d'un numéro majeur, un mineur et un patch. 
+
+- Le majeur est incrément en cas de cassure e l'API.
+- Le mineur lorsqu'une fonctionnalité est ajoutée.
+- Le patch lorsqu'un bug est corrigé.
+
 ## Conteneurs
 
 En Python il existe plusieurs conteneurs de données: 
