@@ -1,28 +1,25 @@
+#include <stdio.h>
+#include <setjmp.h>
 
-// Set of macros to manage exceptions in C with Longjump
+#define TRY do{ jmp_buf ex_buf__; if( !setjmp(ex_buf__) ){
+#define CATCH } else {
+#define ETRY } }while(0)
+#define THROW longjmp(ex_buf__, 1)
 
+int
+main(int argc, char** argv)
+{
+   TRY
+   {
+      printf("In Try Statement\n");
+      THROW;
+      printf("I do not appear\n");
+   }
+   CATCH
+   {
+      printf("Got Exception!\n");
+   }
+   ETRY;
 
-void* quelque_part;
-
-int foo(int in) {
-    if (!in) goto quelque_part;
-    return in + 10;
-}
-
-int bar(int a) {
-    return foo(a);
-}
-
-int baz(int a) {
-    return bar(a);
-}
-
-int main() {
-    baz(42);
-
-    FILE *fp = fopen("foo.txt","r");
-    if (fp == NULL) {
-        perror("fopen");
-    }
-
+   return 0;
 }

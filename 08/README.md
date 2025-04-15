@@ -5,9 +5,6 @@
 - [x] Mémoization
 - [x] With
 
-- [ ] ABC
-- [ ] Regex
-
 ## Exceptions
 
 Les exceptions sont un mechanisme de gestion des erreurs en programmation.
