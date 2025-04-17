@@ -1,8 +1,7 @@
 # Semaine 09/16
 
 - [x] Mini-projet : formation des groupes
-- [ ] ABC
-- [ ] Regex
+- [x] Regex
 
 ## Mini projets
 
@@ -19,7 +18,7 @@
 - Fonctionnalités
 - Technologies utilisées
 - Nom des membres de l'équipe
-- Répartition des tâches  
+- Répartition des tâches
 
 ### Évaluation
 
@@ -50,7 +49,7 @@
 - Etoile Mario (bonus)
 - ...
 
-#### Rag 
+#### Rag
 
 - Récupérer des flux RSS
 - Cosinus des embeddings (comme en TAL)
@@ -59,7 +58,7 @@
 #### sdr
 
 - Récupérer des données avec un RTL SDR / Hack RF
-- Traiter les données 
+- Traiter les données
 
 #### Traffic
 
@@ -76,16 +75,16 @@
 
 #### Chill
 
-- Créer des classements 
+- Créer des classements
 - Inscriptions/points
 - Gérer arbre des matchs/tournois
 - Interface graphique
 - Système de classement ELO pour le chillout
 
-#### Network 
+#### Network
 
 - Récupérer des données réseau
-- Faire un plan du réseau 
+- Faire un plan du réseau
 - Représenter ça sur un site web
 
 #### Tower
@@ -95,7 +94,7 @@
 - AI
 - Path planning (destruction de chemin/obstacle)
 
-### Groupes 
+### Groupes
 
 | Nom                    | Prénom         | Groupe  |
 | ---------------------- | -------------- | ------- |
@@ -121,4 +120,3 @@
 | Pinto da Cunha da Mata | Guilherme      | ?       |
 | Charbonnier            | Lucas          | *       |
 | Sandoz                 | Pierre-Olivier | *       |
-
