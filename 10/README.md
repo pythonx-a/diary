@@ -1,6 +1,6 @@
 # Semaine 10/16
 
-- [ ] Correction Quiz Q01
+- [x] Correction Quiz Q01
 - [ ] Regex (suite)
 - [ ] ABC
 - [ ] Cahier des charges mini projets
@@ -37,10 +37,43 @@
 
 ## Regex
 
+### Groupes
+
+- `[a-z]` groupes: capture n'importe quelle lettre de a - z
+- `[a-zA-Z]` groupes: capture n'importe quelle lettre de a - z ou A - Z
+- `[a-zA-Z0-9]` groupes: capture n'importe quelle lettre de a - z ou A - Z ou 0 - 9
+- `[^a-z]` groupes: capture n'importe quel caractère sauf a - z
+- `[A-Z-]` groupes: capture n'importe quelle lettre de A - Z ou -
+
+### Quantificateurs
+
+- `*` zéro ou plusieurs `{0,}`
+- `+` un ou plusieurs `{1,}`
+- `?` zéro ou un `{0,1}`
+- `{n}` exactement n
+- `{n,}` au moins n
+- `{n,m}` entre n et m
+
+### Capture
+
+- `()` capture
+- `(?:)` non capturant
+
+### Logique
+
+- `|` ou
+
 - Marquage de pneu
 - Dates US par dates ISO
 - Titres Markdown dans une page et les numéroter hiérarchiquement
 
+### Exercice
+
+- S'exercer à décoder un code de pneu dans regex101
+- Implémenter cette regex en Python pour décoder un code de pneu
+- La fonction retourne un dictionnaire avec les différents éléments
+- P.ex. `{'marque': 'Michelin', 'largeur': 205, 'hauteur': 55, 'diametre': 16, 'indice_charge': 91, 'indice_vitesse': 'V'}`
+  
 ## Mini projets
 
 | Code    | Description                                 | Cahier des charges           |
