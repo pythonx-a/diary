@@ -1,10 +1,45 @@
 # Semaine 10/16
 
-- [ ] ABC
-- [ ] Regex (suite)
 - [ ] Correction Quiz Q01
+- [ ] Regex (suite)
+- [ ] ABC
 - [ ] Cahier des charges mini projets
 - [ ] Mini-projet
+
+## Correction du Quiz QZ-01
+
+1. BDFL: Benevolent Dictator For Life
+2. REPL: Read-Eval-Print Loop
+3. ipython
+4. Syntaxe
+   1. `[1]` liste
+   2. `{1}` set
+   3. `{1:2}` dictionnaire
+   4. `(1,2)` tuple (liste immuable)
+   5. `(i for i in range(3))` générateur   
+   6. `'abc'` chaîne de caractères
+5. Un décorateur c'est : permet d'encapsuler une fonction dans une autre
+6. Importer `sqrt`: `from math import sqrt`
+7. Le type d'une variable est déterminé automatiquement ua moment de l'exécution
+8. `__init__` est le *constructeur* de la classe
+9. Duck Typing, un itérateur contient : `__iter__` et `__next__`
+10. CLI: Command Line Interface, on peut utiliser `Click`.
+11. Méthodes: actions, Attributs: données
+12. `yield`
+13. `self` est une convention pour référencer l'instance de la classe actuelle dans une méthode.
+14. `next` est utilisé pour obtenir le prochain élément d'un itérateur.
+15. 3
+16. Attention `y = x` ne copie pas l'objet, `y = x.copy()` le fait.
+17. -15
+18. `[4, 16]`
+19. Poetry: gestion de dépendances et d'environnements virtuels (uv)
+20. `**kwargs` est un dictionnaire d'arguments nommés.
+
+## Regex
+
+- Marquage de pneu
+- Dates US par dates ISO
+- Titres Markdown dans une page et les numéroter hiérarchiquement
 
 ## Mini projets
 
