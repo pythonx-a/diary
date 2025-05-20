@@ -1,0 +1,22 @@
+firstname: Nolan 
+lastname: Denervaud
+# school: 
+#   name: HEIG-VD
+#   address: 
+#     street: Cheseaux
+#     number: 1
+modules:
+  ElPui: 
+    name: Electronique de puissance
+    courses:
+      - Entrainement électriques
+      - FLUX
+  Mecatro1:
+    name: Mécatronique
+    courses: 
+      - ABC
+grades:
+  - 2.5
+  - 4.2
+  - 5.9
+  - 4.5
